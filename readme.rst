@@ -1,70 +1,12 @@
 ###################
-What is CodeIgniter
+Golden 1000 Days
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
 
-*******************
-Release Information
-*******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+The nutrition situation of children in Nepal is far from satisfactory. The 2011 Demographic Health Survey carried out by Ministry of Health and Population has revealed that the nutrition situation especially among young children under two years of age is quite poor, with profound, lifelong and irreversible consequences on their survival, growth and development. About 41% of the children are stunted (chronic malnutrition), and 11% of them are wasted (acute malnutrition). The DHS' further analysis on nutrition has revealed that growth faltering occurs during the first two years of life. Although, vitamin A, iodine and anemia status of infants and young children has improved on account of increased coverage of vitamin A supplements, de-worming tablets and iodized salt, anemia remains a critical problem, which affects 46 % (1.7 million under-five children), with as high as 69% in children aged 6-23 months (DHS, 2011).
 
-**************************
-Changelog and New Features
-**************************
+The 1,000 days between a woman’s pregnancy and her child’s second birthday offer a unique window of opportunity to shape healthier and more prosperous future. The right nutrition and care during this 1,000 day window can have a profound impact on a child’s ability to grow, learn, and rise out of poverty. It can also shape a society’s long-term health, stability and prosperity.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+The Golden 1000 Days initiative seeks to increase awareness about the importance of the first 1000 days in a child's life, ultimately reducing the maternal and child mortality through improved health and nutritional status of adolescents, pregnant and lactating women as well as young children.
 
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
