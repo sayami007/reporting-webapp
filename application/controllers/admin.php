@@ -5,11 +5,10 @@
             $this->load->view('admin',$data);    
          }
 
-
          public function getArray(){
              $this->load->model('supervisor');
              $val=$this->supervisor->getInfo();
-            return $val;
+             return $val;
          }
     }
 ?>

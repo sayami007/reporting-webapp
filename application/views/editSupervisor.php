@@ -7,20 +7,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">G1K Dashboard</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url().'admin';?>">Home</a></li>
-                <li><a href="<?php echo base_url().'phase';?>">Phases</a></li>
-                <li><a href="#">Events</a></li>
-                <li class="active"><a>Edit Supervisor</a></li>
-            </ul>
-        </div>
-    </nav>
-    
     <section>
         <div class="container-fluid">
             <table class="table table-hover">

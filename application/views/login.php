@@ -21,7 +21,7 @@
 
 
         <?php
-         echo form_open('login/log');
+         echo form_open('index.php/login/log');
        ?>
             <div class="white_box">
                 <?php echo isset($error) ? $error :'';?>

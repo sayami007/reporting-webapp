@@ -7,17 +7,15 @@
             $this->load->view('edit', $data);
         }
 
+        //Select the Supervisor from the database;
         public function makeEdit(){
-            $text = $this->input->post('value');
-            $supervisorId = $this->getSupervisorId($text);
-           
+            $supervisorId = $this->input->get('id');
             $this->load->model('supervisor');
             $data['v'] =  $this->supervisor->getSupervisor($supervisorId);
             $this->load->view('editSupervisor',$data);
         }
 
-
-
+        //Refine id from string
         public function getSupervisorId($text){
             $txt = "";
             for ($i = 0; $i<strlen($text) ; $i++) :

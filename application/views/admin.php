@@ -14,9 +14,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="">Home</a></li>
-                <li><a href="<?php echo base_url().'phase';?>">Phases</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="<?php echo base_url().'edit';?>">Edit Supervisor</a></li>
+                <li><a href="<?php echo base_url().'edit';?>">Edit</a></li>
             </ul>
         </div>
     </nav>
