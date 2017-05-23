@@ -1,10 +1,12 @@
 <?php
     class Login extends CI_Controller{
         
+        //This function loads the view Login page
         public function index(){
             $this->load->view('login');
         }
         
+        //This function check the username and password and help to login if correct else return invalid users
         public function log(){
            $username = $this->input->post('username');
            $password = $this->input->post('password');
