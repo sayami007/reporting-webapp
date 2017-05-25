@@ -15,7 +15,8 @@
               <a class="navbar-brand">G1K Dashboard</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo base_url().'admin';?>">Home</a></li>
+               <li><a href="<?php echo base_url().'admin';?>">Home</a></li>
+                <li><a href="<?php echo base_url().'add';?>">Add</a></li>
                 <li class="active"><a>Edit</a></li>
             </ul>
         </div>

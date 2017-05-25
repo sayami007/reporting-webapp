@@ -13,8 +13,10 @@
                 <a class="navbar-brand">G1K Dashboard</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="">Home</a></li>
+                 <li class="active"><a>Home</a></li>
+                 <li><a href="<?php echo base_url().'add';?>">Add</a></li>
                 <li><a href="<?php echo base_url().'edit';?>">Edit</a></li>
+               
             </ul>
         </div>
     </nav>

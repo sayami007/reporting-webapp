@@ -21,12 +21,12 @@
             $data =array(
                   'supervisorPhone' =>   $this->input->post('supervisorPhone'),
                   'usernameText' =>   $this->input->post('usernameText'),
-                  'passwordText' =>   $this->input->post('passwordText'),      
+                  'passwordText' =>   $this->input->post('passwordText'),
                   'districtId' =>   $this->input->post('districtId')
             );
             $supervisorId = $this->input->post('supervisorId');
             $this->load->model('supervisor');
-            $this->supervisor->updateSupervisor($data,$supervisorId); 
+            $this->supervisor->updateSupervisor($data,$supervisorId);
             $this->index();
          }
 
@@ -36,6 +36,35 @@
             $this->load->model('supervisor');
             $this->supervisor->delSupervisor($supervisorId);
             $this->load->view('delete');
+         }
+
+         public function addSupervisor(){
+            $usernameText = $this->input->post('usernameText');
+            $this->load->model('supervisor');
+            $value = $this->supervisor->getSupervisorUser();
+            // foreach($value as $user){
+            //     if($user->usernameText == $usernameText){
+            //         echo 'Select other username';
+            //         die();
+            //         break;
+            //     }
+            // }
+            $data = array(
+                 'supervisorId'=>$this->input->post('supervisorId'),
+                 'supervisorName'=>$this->input->post('supervisorName'),
+                 'supervisorPhone'=>$this->input->post('supervisorPhone'),
+                 'usernameText'=>$this->input->post('usernameText'),
+                 'passwordText'=>$this->input->post('passwordText'),
+                 'districtId'=>$this->input->post('districtId'),
+             );
+             $this->load->model('supervisor');
+             $this->supervisor->addSupervisor($data);
+             $this->refresh();
+         }
+
+         public function refresh(){
+          $this->load->library('refresh');
+          $this->refresh->rp();
          }
     }
 ?>

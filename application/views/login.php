@@ -32,8 +32,7 @@
                 <div class="password_bgfield">
                     <input type="password" name="password" class="textfield" placeholder="Password" />
                 </div>
-                <div style="float:left; color:#878787; padding-top:15px;">
-                    <input type="checkbox" /> Remember Me </div>
+                
                 <div style="clear:both"> </div>
                 <input type="submit" class="login_button_big toggle_btn" id="trigger" name="Login" value="Login" />
 
