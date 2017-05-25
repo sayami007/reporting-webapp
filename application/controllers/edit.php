@@ -13,6 +13,9 @@
             $supervisorId = $this->input->get('id');
             $this->load->model('supervisor');
             $data['v'] =  $this->supervisor->getSupervisor($supervisorId);
+            $district = $this->supervisor->getDistrict();
+            $data['district'] = $district;
+
             $this->load->view('editSupervisor',$data);
         }
 
@@ -38,17 +41,19 @@
             $this->load->view('delete');
          }
 
+         //Add new supervisor
          public function addSupervisor(){
             $usernameText = $this->input->post('usernameText');
             $this->load->model('supervisor');
             $value = $this->supervisor->getSupervisorUser();
-            // foreach($value as $user){
-            //     if($user->usernameText == $usernameText){
-            //         echo 'Select other username';
-            //         die();
-            //         break;
-            //     }
-            // }
+            foreach($value as $user){
+                if($user->usernameText == $usernameText){
+                    echo 'Select other username';
+                    $this->refresh();
+                    die();
+                    break;
+                }
+            }
             $data = array(
                  'supervisorId'=>$this->input->post('supervisorId'),
                  'supervisorName'=>$this->input->post('supervisorName'),
@@ -62,6 +67,7 @@
              $this->refresh();
          }
 
+         //Shows the add functions in the VIEW
          public function refresh(){
           $this->load->library('refresh');
           $this->refresh->rp();

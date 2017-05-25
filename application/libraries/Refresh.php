@@ -1,20 +1,24 @@
 <?
+
+//This class show the add in VIEW
   class Refresh{
     private $CI;
       public function __construct(){
           $this->CI =& get_instance();
       }
 
+      //main function
     public function rp(){
         $this->CI->load->model('supervisor');
         $ids = $this->CI->supervisor->getSingleId();
         $district = $this->CI->supervisor->getDistrict();
-        $data['id'] = $this->randomId($ids);
         $data['district'] = $district;
+         $data['id'] = $this->randomId($ids);
         $data['all'] = $this->allDistrict();
         $this->CI->load->view('add',$data);
     }
 
+    //SHow all the discrit
     public function allDistrict(){
         $str = '';
         $this->CI->load->model('supervisor');
@@ -24,6 +28,8 @@
         endforeach;
         return $str;
     }
+
+    //Generate random ID
     public function randomId($ids){
         $count = $this->countId($ids);
         $arr = $this->makeArray($ids);
@@ -40,6 +46,8 @@
         }
         return $random;
     }
+
+    //Make a Count
     public function countId($ids){
         $count = 0;
         foreach($ids as $id):
@@ -47,6 +55,8 @@
         endforeach;
         return $count;
     }
+
+    //Make arrays of supervisor Id
     public function makeArray($ids){
         $varArray = array();
         foreach($ids as $id):

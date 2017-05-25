@@ -42,6 +42,8 @@ supervisor.districtId = district.districtId");
             $this->db->delete('supervisor');
          }
 
+
+         //Insert new supervisor in the database
          public function addSupervisor($data){
              $this->load->database();
              $this->db->insert('supervisor',$data);
@@ -55,6 +57,7 @@ supervisor.districtId = district.districtId");
             return $val;
         }
 
+        //Get the district ID and name from the database
         public function getDistrict(){
             $this->load->database();
             $query = $this->db->select('districtId,districtName')->get('district');
@@ -62,6 +65,8 @@ supervisor.districtId = district.districtId");
             return $val;
         }
 
+
+        //Get just username from the DB
         public function getSupervisorUser(){
           $this->load->database();
           $query = $this->db->select('usernameText')->get('supervisor');

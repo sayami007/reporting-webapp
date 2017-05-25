@@ -24,8 +24,9 @@
 
     <section>
         <div class="container">
+
             <div class="row">
-                <select id="supervisor" class="selectpicker" name="value">
+                <select class="form-control" id="supervisor" class="selectpicker" name="value">
                  <?php foreach($supervisor as $sup):?>
                     <option id="value">
                         <?php echo $sup->supervisorId.') '. $sup->supervisorName ;?>
@@ -33,10 +34,12 @@
                  <?php endforeach;?>
                 </select>
             </div>
+            <br/>
             <div class="row">
-                <button id="submit" class="btn btn-success"> Edit </button>
+                <button  id="submit" class="btn btn-success"> Edit </button>
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete </button>
             </div>
+            <br/>
         </div>
     </section>
     <section>

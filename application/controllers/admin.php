@@ -1,6 +1,5 @@
 <?php
     class Admin extends CI_Controller{   
-
         //This function call the function getInfos and send the information to the view     
         public function index(){
             $data['value'] = $this->getInfos();
