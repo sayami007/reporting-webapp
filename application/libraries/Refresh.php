@@ -33,14 +33,14 @@
     public function randomId($ids){
         $count = $this->countId($ids);
         $arr = $this->makeArray($ids);
-        $random = rand(1,10);
+        $random = rand(1,100);
         for($i=0;$i<$count;$i++){
             if($count == 10){
                 return null;
                 break;
             }
             else if($random == $arr[$i]){
-                $random = rand(1,10);
+                $random = rand(1,100);
                 $i=-1;
              }
         }

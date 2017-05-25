@@ -7,32 +7,48 @@
     </title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-
+<style>
+    body{
+        background:#ceecff;
+    }
+</style>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand">G1K Dashboard</a>
-            </div>
-            <ul class="nav navbar-nav">
-               <li><a href="<?php echo base_url().'admin';?>">Home</a></li>
+
+
+
+<nav class="navbar navbar-default">
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand">G1K Dashboard</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+          <li><a href="<?php echo base_url().'admin';?>">Home</a></li>
                 <li><a href="<?php echo base_url().'add';?>">Add</a></li>
                 <li class="active"><a>Edit</a></li>
-            </ul>
-        </div>
-    </nav>
-
+    </ul>
+  </div>
+</div>
+</nav>
     <section>
         <div class="container">
-
+            <h1>Edit Supervisor</h1>
+            <br/>
             <div class="row">
-                <select class="form-control" id="supervisor" class="selectpicker" name="value">
-                 <?php foreach($supervisor as $sup):?>
-                    <option id="value">
-                        <?php echo $sup->supervisorId.') '. $sup->supervisorName ;?>
-                    </option>
-                 <?php endforeach;?>
-                </select>
+              
+                    <select class="form-control" id="supervisor" class="selectpicker" name="value">
+                    <?php foreach($supervisor as $sup):?>
+                        <option id="value">
+                            <?php echo $sup->supervisorId.') '. $sup->supervisorName ;?>
+                        </option>
+                    <?php endforeach;?>
+                    </select>
+         
             </div>
             <br/>
             <div class="row">
@@ -97,8 +113,6 @@
             $('#view').load(value);
         });
     });
-
-
     </script>
 
 </body>

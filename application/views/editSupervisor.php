@@ -4,6 +4,11 @@
 <head>
     <title>Editing</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    body{
+        background:#ceecff;
+    }
+</style>
 </head>
 
 <body>
@@ -44,7 +49,7 @@
                     <td>
                         <?php echo $va->supervisorPhone;?>
                     </td>
-                    <td> <input type="tel" id="supervisorPhone" class="form-control" maxlength="10"  name="supervisorPhone" placeholder="supervisorPhone" /></td>
+                    <td> <input type="number" id="supervisorPhone" class="form-control" maxlength="10"  name="supervisorPhone" placeholder="supervisorPhone" /></td>
                 </tr>
                 <tr>
                     <td>User ID Name</td>
@@ -97,9 +102,9 @@
                        alert("Username text error.");
                        return false;
                      }else{
-                         if($('#passwordText').length < 8){
-                         alert('Password Values less than 8. Please Check.');
-                         return false;
+                         if($('#passwordText').val().length < 8){
+                            alert('Password Values less than 8. Please Check.');
+                            return false;
                        }else{
                            return true;
                        }

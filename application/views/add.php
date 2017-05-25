@@ -4,21 +4,34 @@
         <title>Add Supervisor</title>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
+    <style>
+    body{
+        background:#ceecff;
+    }
+</style>
     <body>
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand">G1K Dashboard</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="<?php echo base_url().'admin';?>">Home</a></li>
+
+
+<nav class="navbar navbar-default">
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand">G1K Dashboard</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+         <li><a href="<?php echo base_url().'admin';?>">Home</a></li>
                     <li class="active"><a>Add</a></li>
                     <li><a href="<?php echo base_url().'edit';?>">Edit</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section>
+    </ul>
+  </div>
+</div>
+</nav>
 
 
 
@@ -44,7 +57,7 @@
         <div class="form-group">
             <label class="control-label col-xs-3" for="supervisorPhone">Phone Number</label>
             <div class="col-xs-9">
-                <input type="tel" class="form-control" id="supervisorPhone" name="supervisorPhone" maxlength="10" placeholder="98xxxxxxxx" >
+                <input type="number" class="form-control" id="supervisorPhone" name="supervisorPhone" maxlength="10" placeholder="98xxxxxxxx" >
             </div>
         </div>
 
