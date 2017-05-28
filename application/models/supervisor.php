@@ -73,6 +73,5 @@ supervisor.districtId = district.districtId");
           $val = $query->result();
           return $val;
         }
-
     }
 ?>
