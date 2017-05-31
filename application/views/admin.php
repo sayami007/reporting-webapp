@@ -35,7 +35,7 @@
 
 <section>
         <div class="container">
-            <h1>User List</h1>
+            <h1>List of Supervisors</h1>
             <div class="col-xs-12">
             <table class="table table-striped" border="1">
                 <tr>
@@ -43,11 +43,11 @@
                         Supervisor Id
                     </th>
                     <th>
-                        Supervisor Name
+                        Person Name
                     </th>
 
                     <th>
-                        Supervisor Phonenumber
+                        Contact Number
                     </th>
 
                     <th>
